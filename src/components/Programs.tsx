@@ -6,8 +6,8 @@ import cse from "@/Image/cse.jpg"
 const IndexPage = () => {
     return (
         <>
-            <h1 className='text-center text-blue-500 text-3xl font-bold p-4 '>Programed Offered</h1>
-            <div className="grid grid-cols-3 justify-items-center gap-4 items-center h-auto p-2 mt-4 ">
+            <h1 className='text-center text-blue-500 text-3xl font-bold m-4 '>Programed Offered</h1>
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 justify-items-center lg:gap-4 md:gap-4 sm:gap-4 items-center h-auto p-2 mt-4 ">
 
                 <Card
                     imageUrl={cse}

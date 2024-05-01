@@ -4,11 +4,11 @@ import BannerPic from "@/Image/institute.jpg"
 const Banner = () => {
     return (
         <>
-            <div className=" min-w-full h-[100vh] border-4 border-black">
+            <div className=" w-[100vw] border-4 border-black">
                 <Image
                     src={BannerPic}
                     alt='dd'
-                    className='min-w-full h-[100%]'
+                    className='w-[100vw] h-[100%]'
                 />
             </div>
         </>

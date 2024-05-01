@@ -1,5 +1,8 @@
 "use client"
 import { useState } from 'react';
+import Navlink from '../components/Navlink'
+import Dropdown from '../components/Dropdown'
+
 
 const Navbar = () => {
     const [isCourseMenuOpen, setIsCourseMenuOpen] = useState(false);
@@ -9,58 +12,19 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-white p-4">
-            <div className="max-w-7xl mx-auto flex justify-center items-center">
-                <div className="flex items-center gap-8">
-                    <a href="#" className="text-black font-sans text-xl p-2  hover:text-blue-500 ">
-                        Home
-                    </a>
-                    <a href="#" className="text-black font-sans text-xl p-2  hover:text-blue-500 ">
-                        About Us
-                    </a>
-                    <a href="#" className="text-black font-sans text-xl p-2  hover:text-blue-500 ">
-                        Academics
-                    </a>
-                    <a href="#" className="text-black font-sans text-xl p-2  hover:text-blue-500 ">
-                        Admission
-                    </a>
-                    <a href="#" className="text-black font-sans text-xl p-2  hover:text-blue-500 ">
-                        Departments
-                    </a>
-                    <a href="#" className="text-black font-sans text-xl p-2  hover:text-blue-500 ">
-                        Student Corner
-                    </a>
-                    <a href="#" className="text-black font-sans text-xl p-2  hover:text-blue-500 ">
-                        Placements
-                    </a>
-                    <a href="#" className="text-black font-sans text-xl p-2  hover:text-blue-500 ">
-                        Contact Us
-                    </a>
-
-                    <div className="relative ml-4">
-                        <a
-                            href="#"
-                            className="text-white hover:text-gray-300"
-                            onMouseEnter={toggleCourseMenu}
-                            onMouseLeave={toggleCourseMenu}
-                        >
-                            Course
-                        </a>
-                        {isCourseMenuOpen && (
-                            <div className="absolute bg-gray-800 py-2 px-4 mt-2 rounded shadow-lg">
-                                <a href="#" className="block text-white hover:text-gray-300">
-                                    Course 1
-                                </a>
-                                <a href="#" className="block text-white hover:text-gray-300">
-                                    Course 2
-                                </a>
-                                <a href="#" className="block text-white hover:text-gray-300">
-                                    Course 3
-                                </a>
-                            </div>
-                        )}
+        <nav className="bg-white p-4 lg:my-10 md:my-5 sm:my-0 fle flex-row justify-end">
+            <div className="max-w-7xl lg:block w-[96vw] items-end justify-end">
+                <div className="items-center justify-center w-[96vw] lg:inline-block md:inline-block md:text-xl hidden">
+                    <div className='flex gap-8 justify-self-end item-center justify-center w-[96vw]'>
+                        <Navlink link='/' text='Home' />
+                        <Navlink link='/' text='About Us' />
+                        <Navlink link='/' text='Admission' />
+                        <Navlink link='/' text='Departmants' />
+                        <Navlink link='/' text='Students Corner' />
+                        <Navlink link='/' text='Contact Us' />
                     </div>
-                </div>
+                    </div>
+                <Dropdown />
             </div>
         </nav>
     );

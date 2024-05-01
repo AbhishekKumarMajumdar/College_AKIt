@@ -14,7 +14,6 @@ const Main = () => {
             <NewsSection />
             <Program />
             <EventCard />
-
             <Sponsor />
         </div>
     )

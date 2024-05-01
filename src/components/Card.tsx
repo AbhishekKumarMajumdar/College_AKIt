@@ -5,7 +5,7 @@ import React from 'react';
 Image
 const Card = ({ imageUrl, title, subtitle }: any) => {
     return (
-        <div className="max-w-sm rounded overflow-hidden shadow-xl">
+        <div className="max-w-sm flex flex-col rounded overflow-hidden shadow-xl">
             <Image className="w-[100%]" width={100} height={50} src={imageUrl.src} alt="Card" />
             <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">{title}</div>

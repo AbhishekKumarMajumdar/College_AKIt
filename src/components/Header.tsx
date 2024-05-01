@@ -5,11 +5,11 @@ import Navbar from './Navbar'
 const Header = () => {
     return (
         <>
-            <div className='h-[200px] min-w-full flex justify-center items-center'>
+            <div className='min-w-full flex justify-center items-center'>
                 <Image
                     src={HeaderPic}
                     alt="header picture"
-                    className='w-[95%] h-[90%]'
+                    className='w-[100vw] h-[100%]'
                 />
             </div>
             <Navbar />
