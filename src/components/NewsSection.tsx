@@ -4,10 +4,10 @@ import Institute from './Institute'
 const NewsSection = () => {
     return (
         <>
-            <div className=" py-2 px-16 grid mb-10 grid-cols-12 gap-8">
-                <div className="lg:col-span-3 md:col-span-4 col-span-4">    <News /></div>
-                <div className="lg:col-span-6 md:col-span-8 col-span-8">    <Institute /></div>
-                <div className="lg:col-span-3 md:hidden hidden lg:inline-block">    <News /></div>
+            <div className=" py-2 lg:px-16 px-[4vw] flex mb-10 lg:gap-8 gap-4 w-[90vw]">
+                <div className="">    <News /></div>
+                <div className="">    <Institute /></div>
+                <div className="hidden lg:inline-block">    <News /></div>
 
 
             </div>

@@ -1,14 +1,16 @@
 "use client"
 import { useState } from 'react';
 import Navlink from '../components/Navlink'
-import Dropdown from '../components/Dropdown'
+import Hamburger from '../components/Hamburger'
+import { FaBars } from "react-icons/fa"
+
 
 
 const Navbar = () => {
-    const [isCourseMenuOpen, setIsCourseMenuOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const toggleCourseMenu = () => {
-        setIsCourseMenuOpen(!isCourseMenuOpen);
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
     };
 
     return (
@@ -24,7 +26,8 @@ const Navbar = () => {
                         <Navlink link='/' text='Contact Us' />
                     </div>
                     </div>
-                <Dropdown />
+                <FaBars className='lg:hidden md:hidden text-[4vw]' onMouseDown={toggleMenu} />
+                {isMenuOpen&&<Hamburger/>}
             </div>
         </nav>
     );

@@ -8,7 +8,7 @@ const EventCard = () => {
     return (
         <>
             <h1 className='text-center text-blue-500 text-3xl font-bold p-4 '>Programed Offered</h1>
-            <div className="grid grid-cols-3 justify-items-center gap-4 items-center h-auto p-2 mt-4 ">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-items-center gap-4 items-center h-auto p-2 mt-4 ">
 
                 <EventCards
                     imageUrl="https://via.placeholder.com/800x450"

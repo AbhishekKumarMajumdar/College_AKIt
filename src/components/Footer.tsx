@@ -4,12 +4,12 @@ const Footer = () => {
     return (
         <footer className="bg-gray-900 ">
             <p className='text-center px-4 py-6 text-white text-3xl'>“You have to dream before the dream comes true. ”<br />- Dr. A.P.J. Abdul Kalam</p>
-            <div className="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-10 ">
+            <div className="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-10">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 justify-items-center">
                     <div
-                        className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-3 md:grid-cols-4"
+                        className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-3 md:grid-cols-4 "
                     >
-                        <div className="text-center sm:text-left">
+                        <div className="text-center sm:text-left ">
                             <p className="text-lg font-medium text-white">University Address</p>
                             <p className='"max-w-md mx-auto mt-6 leading-relaxed text-left text-gray-400 sm:max-w-xs sm:mx-0 sm:text-left"'>
                                 Dr. APJ Abdul Kalam Institute of Technology Tanakpur, Champawat Uttarakhand - 262309 help@ittanakpur.ac.in
@@ -19,8 +19,8 @@ const Footer = () => {
                         <div className="text-center sm:text-left">
                             <p className="text-lg font-medium text-white">Our Services</p>
 
-                            <nav className="mt-8">
-                                <ul className="flex justify-center flex-col gap-6 mt-8 md:gap-2 sm:justify-start">
+                            <nav className="lg:mt-8 flex justify-center items-start">
+                                <ul className="flex justify-center flex-col gap-6 mt-8 mx-auto md:gap-2">
                                     <li>
                                         <a
                                             href="https://www.facebook.com/ITTanakpur"
